@@ -17,4 +17,8 @@ export class UserService {
   getUsers(): User [] {
     return this.users;
   }
+
+  addUser(user: User) {
+    this.users.push(Object.assign({}, user));
+  }
 }

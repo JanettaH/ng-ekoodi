@@ -17,9 +17,6 @@ export class AppComponent {
   changeName(): void {
     this.selectedUserName = '3K00d1';
   }
-  addUser (): void {
-    this.selectedUserName = '';
-  }
 
   onUserSelected(user: User) {
     console.log(user);
