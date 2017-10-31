@@ -14,20 +14,26 @@ export class UserListComponent implements OnInit {
   users: User[];
   @Output() userSelected: EventEmitter<User>;
 
+  newUser: User;
+
   constructor(private userService: UserService) {
     this.title = 'User List';
     this.users = [];
     this.userSelected = new EventEmitter();
+    this.newUser = new User();
   }
 
   ngOnInit() {
     this.users = this.userService.getUsers();
   }
 
-    onUserSelect(user: User) {
-      this.userSelected.emit(user);
-      console.log(user);
-    }
+  onUserSelect(user: User) {
+    this.userSelected.emit(user);
+    console.log(user);
+  }
 
+  addUser() {
+    console.log(this.newUser);
+  }
 }
 

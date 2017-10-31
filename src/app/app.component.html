@@ -1,14 +1,13 @@
 <div>
-  Hello {{selectedUserName}}
+  Hello new user!
 </div>
-
 
 <mat-form-field class="example-full-width">
   <input matInput placeholder="Name" [(ngModel)]="selectedUserName">
 </mat-form-field>
 
 
-<button mat-raised-button (click)="changeName()" color="accent">Change</button>
+<button mat-raised-button (click)="addUser()" color="accent">Add</button>
 
 
 <button mat-icon-button color="accent">
@@ -19,9 +18,4 @@
 
 <ekoodi-user-list (userSelected)="onUserSelected($event)"></ekoodi-user-list>
 
-
-<div>
-  How happy are you?
-</div>
-<mat-slider></mat-slider>
 
