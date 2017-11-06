@@ -1,4 +1,4 @@
-<div>
+<!--<div>
   Hello new user!
 </div>
 
@@ -14,9 +14,19 @@
   <mat-icon aria-label="Icon button">favorite</mat-icon>
 </button>
 
+<button mat-raised-button (click)="showUserList()">User list</button>
+
+<button mat-raised-button (click)="showAddUser()">Add user</button>
 
 
-<ekoodi-user-list (userSelected)="onUserSelected($event)"></ekoodi-user-list>
+<router-outlet></router-outlet>-->
 
 
-
+<div fxLayout="row" fxFlexFill>
+  <div fxFlex fxLayout="column" fxLayoutAlign="center, center">
+    Hei!
+  </div>
+  <div fxHide.xs fxFlex fxLayout="column" fxLayoutAlign="center, center">
+    Hei!
+  </div>
+</div>
